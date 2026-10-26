@@ -137,6 +137,59 @@ footer{border-top:1px solid var(--line);padding:25px 0;color:var(--muted);font-s
  .footer-inner{flex-direction:column;align-items:flex-start}
 }
 @media(min-width:600px) and (max-width:900px){.cards{grid-template-columns:repeat(2,minmax(0,1fr))}}
+  /* Vizesiz ülkeler bölümü */
+.visa-section {
+  padding: 90px 0;
+  background: var(--panel);
+  border-top: 1px solid var(--line);
+}
+
+.visa-section h2 {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: clamp(36px, 5vw, 58px);
+  line-height: 1.1;
+  margin: 12px 0 18px;
+  color: var(--text);
+}
+
+.visa-intro {
+  max-width: 650px;
+  color: var(--muted);
+  margin-bottom: 30px;
+}
+
+.visa-frame {
+  width: 100%;
+  height: 800px;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: #fff;
+  margin-bottom: 24px;
+}
+
+.visa-frame iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  background: #fff;
+}
+
+.visa-note {
+  margin-top: 18px;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+@media (max-width: 768px) {
+  .visa-section {
+    padding: 60px 0;
+  }
+
+  .visa-frame {
+    height: 650px;
+  }
+}
 </style>
 </head>
 
@@ -263,6 +316,38 @@ footer{border-top:1px solid var(--line);padding:25px 0;color:var(--muted);font-s
     </div>
   </section>
 </main>
+
+<section class="visa-section" id="vizesiz-ulkeler">
+  <div class="wrap">
+    <div class="eyebrow">PASAPORTUNU AL, YOLA ÇIK</div>
+    <h2>Vizesiz Gidebileceğimiz Ülkeler</h2>
+    <p class="visa-intro">
+      Türk pasaportuyla hangi ülkelere gidebilirsin?
+      Ülkeleri ve giriş koşullarını Passport Index üzerinden keşfet.
+    </p>
+
+    <div class="visa-frame">
+      <iframe
+        src="https://www.passportindex.org/comparebyPassport.php?p1=tr"
+        title="Türk pasaportu vize bilgileri - Passport Index"
+        loading="lazy"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen>
+      </iframe>
+    </div>
+
+    <a class="btn btn-youtube"
+       href="https://www.passportindex.org/comparebyPassport.php?p1=tr"
+       target="_blank"
+       rel="noopener noreferrer">
+      Passport Index'te Aç ↗
+    </a>
+
+    <p class="visa-note">
+      Seyahatten önce güncel vize koşullarını ilgili ülkenin resmî kaynaklarından kontrol et.
+    </p>
+  </div>
+</section>
 
 <footer>
   <div class="wrap footer-inner">
