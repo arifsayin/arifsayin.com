@@ -562,3 +562,16 @@ footer {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
+/* Yeni tasarımın temel font ve renk ayarları */
+body {
+  font-family: "Inter", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Fraunces", serif;
+}
