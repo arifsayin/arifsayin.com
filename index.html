@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-<link rel="stylesheet" href="assets/css/style.css">
   <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="theme-color" content="#17231c">
 <meta name="description" content="Arif Sayın ile dünyayı keşfet. Gezmek Yetmez, Anlatmak Lazım. Seyahat belgeselleri, gerçek hikâyeler ve farklı kültürler.">
 <title>Arif Sayın | Gezmek Yetmez, Anlatmak Lazım</title>
+<link rel="stylesheet" href="assets/css/style.css">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -201,7 +201,7 @@ footer{border-top:1px solid var(--line);padding:25px 0;color:var(--muted);font-s
       <img src="Zirveye%20Yolculuk%20AS%20Logosu.png.png" alt="Arif Sayın AS logosu">
       <span style="color:var(--text)">ARİF <span>SAYIN</span></span>
     </a>
-    <button class="menu-toggle" id="menuToggle" aria-label="Menüyü aç" aria-expanded="false">☰</button>
+    <button class="menu-toggle" id="menuToggle" type="button" aria-label="Menüyü aç" aria-expanded="false" aria-controls="navLinks">☰</button>
     <nav class="nav-links" id="navLinks">
       <a href="#videolar">Videolar</a>
       <a href="#yolculuklar">Yolculuklar</a>
@@ -258,80 +258,84 @@ footer{border-top:1px solid var(--line);padding:25px 0;color:var(--muted);font-s
           <p>Her yolculuk başka bir hikâye, her durak yeni bir keşif.</p>
         </div>
       </div>
-     <div class="travel-gallery">
+      <div class="travel-gallery">
+        <a class="gallery-art" href="https://www.youtube.com/playlist?list=PLC3DWAZw1fWP0zdSvgzW3poMEyL9_kLXP" target="_blank" rel="noopener noreferrer" aria-label="Everest yolculuğu oynatma listesini aç">
+          <div class="gallery-frame">
+            <img src="https://img.youtube.com/vi/a4_t4CqLH_Y/maxresdefault.jpg" alt="Everest ve Himalayalar" loading="lazy">
+            <span class="gallery-number">01</span>
+            <span class="gallery-overlay">SERİYİ KEŞFET</span>
+          </div>
+          <div class="gallery-caption">
+            <span>NEPAL · HİMALAYALAR</span>
+            <h3>Everest'e Yolculuk</h3>
+            <p>Dünyanın çatısına uzanan unutulmaz bir macera.</p>
+          </div>
+        </a>
 
-  <a class="gallery-art" href="https://www.youtube.com/playlist?list=PLC3DWAZw1fWP0zdSvgzW3poMEyL9_kLXP" target="_blank" rel="noopener noreferrer">
-    <div class="gallery-frame">
-      <img src="https://img.youtube.com/vi/a4_t4CqLH_Y/maxresdefault.jpg" alt="Everest ve Himalayalar" loading="lazy">
-      <span class="gallery-number">01</span>
-      <span class="gallery-overlay">SERİYİ KEŞFET</span>
-    </div>
-    <div class="gallery-caption">
-      <span>NEPAL · HİMALAYALAR</span>
-      <h3>Everest'e Yolculuk</h3>
-      <p>Dünyanın çatısına uzanan unutulmaz bir macera.</p>
-    </div>
-  </a>
+        <a class="gallery-art" href="https://www.youtube.com/playlist?list=PLC3DWAZw1fWNGFldhLD5me4A2zT7BMOgK" target="_blank" rel="noopener noreferrer" aria-label="Ukrayna yolculuğu oynatma listesini aç">
+          <div class="gallery-frame">
+            <img src="https://img.youtube.com/vi/djmMHTcLXZs/maxresdefault.jpg" alt="Ukrayna yolculuğu" loading="lazy">
+            <span class="gallery-number">02</span>
+            <span class="gallery-overlay">SERİYİ KEŞFET</span>
+          </div>
+          <div class="gallery-caption">
+            <span>UKRAYNA</span>
+            <h3>Ukrayna'nın Hikâyeleri</h3>
+            <p>Şehirler, tarih ve savaşın gölgesindeki hayatlar.</p>
+          </div>
+        </a>
 
-  <a class="gallery-art" href="https://www.youtube.com/playlist?list=PLC3DWAZw1fWNGFldhLD5me4A2zT7BMOgK" target="_blank" rel="noopener noreferrer">
-    <div class="gallery-frame">
-      <img src="https://img.youtube.com/vi/djmMHTcLXZs/maxresdefault.jpg" alt="Ukrayna yolculuğu" loading="lazy">
-      <span class="gallery-number">02</span>
-      <span class="gallery-overlay">SERİYİ KEŞFET</span>
-    </div>
-    <div class="gallery-caption">
-      <span>UKRAYNA</span>
-      <h3>Ukrayna'nın Hikâyeleri</h3>
-      <p>Şehirler, tarih ve savaşın gölgesindeki hayatlar.</p>
-    </div>
-  </a>
+        <a class="gallery-art" href="https://www.youtube.com/playlist?list=PLC3DWAZw1fWP_-O_cLizw_Gyg9oj_hOJm" target="_blank" rel="noopener noreferrer" aria-label="Hindistan yolculuğu oynatma listesini aç">
+          <div class="gallery-frame">
+            <img src="https://img.youtube.com/vi/HV-uoRdoTWQ/maxresdefault.jpg" alt="Hindistan yolculuğu" loading="lazy">
+            <span class="gallery-number">03</span>
+            <span class="gallery-overlay">SERİYİ KEŞFET</span>
+          </div>
+          <div class="gallery-caption">
+            <span>HİNDİSTAN</span>
+            <h3>Hindistan'ın Derinlikleri</h3>
+            <p>İnançlar, renkler ve sokakların içinden gerçek hikâyeler.</p>
+          </div>
+        </a>
 
-  <a class="gallery-art" href="https://www.youtube.com/playlist?list=PLC3DWAZw1fWP_-O_cLizw_Gyg9oj_hOJm" target="_blank" rel="noopener noreferrer">
-    <div class="gallery-frame">
-      <img src="https://img.youtube.com/vi/HV-uoRdoTWQ/maxresdefault.jpg" alt="Hindistan yolculuğu" loading="lazy">
-      <span class="gallery-number">03</span>
-      <span class="gallery-overlay">SERİYİ KEŞFET</span>
-    </div>
-    <div class="gallery-caption">
-      <span>HİNDİSTAN</span>
-      <h3>Hindistan'ın Derinlikleri</h3>
-      <p>İnançlar, renkler ve sokakların içinden gerçek hikâyeler.</p>
-    </div>
-  </a>
+        <a class="gallery-art" href="https://www.youtube.com/playlist?list=PLaTdPFpu5BAk" target="_blank" rel="noopener noreferrer" aria-label="Sri Lanka yolculuğu oynatma listesini aç">
+          <div class="gallery-frame">
+            <img src="https://img.youtube.com/vi/G029PPX2L9g/maxresdefault.jpg" alt="Sri Lanka yolculuğu" loading="lazy">
+            <span class="gallery-number">04</span>
+            <span class="gallery-overlay">SERİYİ KEŞFET</span>
+          </div>
+          <div class="gallery-caption">
+            <span>SRİ LANKA</span>
+            <h3>Asya'nın Tropik Adası</h3>
+            <p>Doğa, kültür ve tropik yaşamın izinde.</p>
+          </div>
+        </a>
 
- <div class="gallery-frame">
-    <img src="https://img.youtube.com/vi/G029PPX2L9g/maxresdefault.jpg" alt="Sri Lanka yolculuğu" loading="lazy">
-    <span class="gallery-number">04</span>
-    <span class="gallery-overlay">SERİYİ KEŞFET</span>
-</div>
-  </a>
+        <a class="gallery-art" href="https://www.youtube.com/playlist?list=PLE3lcT5VVRjQ" target="_blank" rel="noopener noreferrer" aria-label="Nepal yolculuğu oynatma listesini aç">
+          <div class="gallery-frame">
+            <img src="https://img.youtube.com/vi/v_Q5OA-GBhM/maxresdefault.jpg" alt="Nepal ve Himalayalar" loading="lazy">
+            <span class="gallery-number">05</span>
+            <span class="gallery-overlay">SERİYİ KEŞFET</span>
+          </div>
+          <div class="gallery-caption">
+            <span>HİMALAYALAR</span>
+            <h3>Himalayaların Ülkesi</h3>
+            <p>Dağların, tapınakların ve sokakların ülkesi.</p>
+          </div>
+        </a>
 
-  <a class="gallery-art" href="https://www.youtube.com/playlist?list=PLE3lcT5VVRjQ" target="_blank" rel="noopener noreferrer">
-   <div class="gallery-frame">
-    <img src="https://img.youtube.com/vi/v_Q5OA-GBhM/maxresdefault.jpg" alt="Nepal ve Himalayalar" loading="lazy">
-    <span class="gallery-number">05</span>
-    <span class="gallery-overlay">SERİYİ KEŞFET</span>
-</div>
-      <span>HİMALAYALAR</span>
-      <h3>Himalayaların Ülkesi</h3>
-      <p>Dağların, tapınakların ve sokakların ülkesi.</p>
-    </div>
-  </a>
-
-  <a class="gallery-art" href="https://www.youtube.com/watch?v=OfrLevQXxjc&list=PLC3DWAZw1fWPZvq1oxma31lKonPJBp-vW" target="_blank" rel="noopener noreferrer">
-    <div class="gallery-frame">
-      <img src="https://img.youtube.com/vi/OfrLevQXxjc/hqdefault.jpg" alt="Mısır yolculuğu" loading="lazy">
-      <span class="gallery-number">06</span>
-      <span class="gallery-overlay">SERİYİ KEŞFET</span>
-    </div>
-    <div class="gallery-caption">
-      <span>MISIR</span>
-      <h3>Firavunların İzinde</h3>
-      <p>Antik dünyanın izleri ve Nil'in hikâyeleri.</p>
-    </div>
-  </a>
-
-</div>
+        <a class="gallery-art" href="https://www.youtube.com/watch?v=OfrLevQXxjc&list=PLC3DWAZw1fWPZvq1oxma31lKonPJBp-vW" target="_blank" rel="noopener noreferrer" aria-label="Mısır yolculuğu videosunu ve oynatma listesini aç">
+          <div class="gallery-frame">
+            <img src="https://img.youtube.com/vi/OfrLevQXxjc/hqdefault.jpg" alt="Mısır ve Şarm El-Şeyh yolculuğu" loading="lazy">
+            <span class="gallery-number">06</span>
+            <span class="gallery-overlay">SERİYİ KEŞFET</span>
+          </div>
+          <div class="gallery-caption">
+            <span>MISIR</span>
+            <h3>Firavunların İzinde</h3>
+            <p>Antik dünyanın izleri ve Nil'in hikâyeleri.</p>
+          </div>
+        </a>
       </div>
     </div>
   </section>
@@ -420,7 +424,7 @@ footer{border-top:1px solid var(--line);padding:25px 0;color:var(--muted);font-s
     <span>© <span id="year"></span> Arif Sayın. Tüm hakları saklıdır.</span>
     <div class="footer-social">
       <a href="https://www.youtube.com/@arifsayin" target="_blank" rel="noopener noreferrer">YouTube ↗</a>
-      <a href="mailto:arifsayin@live.com">E-posta ↗</a>
+      <a href="mailto:iletisim@arifsayin.com">E-posta ↗</a>
     </div>
   </div>
 </footer>
