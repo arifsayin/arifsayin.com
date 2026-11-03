@@ -575,3 +575,105 @@ h5,
 h6 {
   font-family: "Fraunces", serif;
 }
+/* =========================================
+   YOLCULUKLAR - SİNEMATİK GALERİ
+========================================= */
+
+.travel-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 38px 26px;
+    margin-top: 35px;
+}
+
+.travel-gallery > * {
+    min-width: 0;
+    overflow: hidden;
+}
+
+.travel-gallery .gallery-frame {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 10;
+    overflow: hidden;
+    padding: 8px;
+    background: linear-gradient(145deg, #292929, #111);
+    border: 1px solid rgba(255,255,255,.13);
+    box-shadow: 0 12px 35px rgba(0,0,0,.35);
+}
+
+.travel-gallery .gallery-frame img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform .6s ease;
+}
+
+.travel-gallery > *:hover .gallery-frame img {
+    transform: scale(1.06);
+}
+
+.travel-gallery .gallery-caption {
+    padding: 17px 4px 5px;
+}
+
+.travel-gallery .gallery-caption h3 {
+    margin: 7px 0;
+    color: var(--renk-kirik-beyaz);
+    font-family: "Fraunces", serif;
+    font-size: 25px;
+}
+
+.travel-gallery .gallery-caption p {
+    color: #aaa;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.travel-gallery .gallery-number {
+    position: absolute;
+    z-index: 2;
+    top: 17px;
+    left: 17px;
+    padding: 7px 12px;
+    color: white;
+    background: rgba(0,0,0,.65);
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+.travel-gallery .gallery-placeholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:
+        radial-gradient(ellipse at 50% 45%, rgba(170,120,65,.3), transparent 65%),
+        linear-gradient(135deg, #29251f, #101010);
+}
+
+.travel-gallery .gallery-placeholder-title {
+    color: #e8d5b5;
+    font-family: "Fraunces", serif;
+    font-size: 27px;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+@media (max-width: 900px) {
+    .travel-gallery {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 30px 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    .travel-gallery {
+        grid-template-columns: 1fr;
+        gap: 28px;
+    }
+
+    .travel-gallery .gallery-caption h3 {
+        font-size: 23px;
+    }
+}
